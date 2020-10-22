@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text='Please drag the red cross such that it overlap "A" and snap a screenshot of resultant screen'
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/dot"
+        android:layout_width="27dp"
+        android:layout_height="19dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <RelativeLayout
+        android:id="@+id/imageLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="412dp"
+            android:layout_height="272dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+
+            app:srcCompat="@drawable/mcq" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#0277BD"
+        android:textSize="14sp" />
+
+</LinearLayout>
+    </layout>
